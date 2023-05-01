@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+header {
+    background-color: #fff;
+    color: $color;
+    @include font-500;
+    
+    nav {
+        box-shadow: 0 1px 0 rgba(30,149,225,.08);
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 10px 0 10px 30px;
+
+            li {
+                padding: 5px 10px;
+            }
+    
+            li:hover {
+                cursor: pointer;
+                color: $color-dark;
+            }
+    
+            .active {
+                color: $color-dark;
+            }
+        }
+    }
+}
